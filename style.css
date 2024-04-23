@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Flexo-Demi';
+    src: url(fonts/Flexo-Demi/Flexo-Demi.woff);
+    /* url(fonts/Flexo-Demi/Flexo-Demi.woff); */
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 500;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 17px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* max-width: auto; */
+  width: 100%;
+  /* margin-left: 10px ;
+  margin-right: 10px; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.pokemon-name {
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #A4A4A4;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.pokemon-type {
+  display: flex;
+  padding: 12px;
+  font-size: 18px;
+  color: #000000;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center
+
+  
+}
+.color {
+  background-color: #F2F2F2;
+}
+.pokemon-ability {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 18px;
+  color: #000000;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Roboto-Regular';
+  font-size: 13.6px;
+  color: #919191;
+  line-height: 1.5;
+}
+
+.ability{
+display: flex;
+justify-content: space-between;
+
+}
+
+.rightplus {
+  color: #616161;
+}
+
+.blankspace img {
+  margin-right: 7px;
+  
+}
+
+.size {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.img-mewtwo {
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: 342px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+  margin-left: 10px ;
+  margin-right: 10px;
+}
+@media (min-width: 1024px) {
+  .center {
+    flex-direction: row;
+  }
+  .img-mewtwo {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 4px;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.card2 div {
+  width: 33.33%;
+}
+
+.flexcard {
+  display: flex;
+  flex-direction: column;
+  ;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column ;
+}
+
+.image-size{
+  height: 20px;
+  width: 20px;
+}
+
+.title {
+    font-family: 'Flexo-Demi';
+    font-size: 32px;
+}
+
+.label {
+ display: flex;
+ 
+
+}
+
+#subtypes {
+padding-left: 5px;
+
+}

@@ -162,3 +162,14 @@ justify-content: space-between;
 padding-left: 5px;
 
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}

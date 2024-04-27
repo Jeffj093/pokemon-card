@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <main>
     <div class="center">
       <img class="img-mewtwo" src="img/card.png" alt="mewtwo" id="pokeimg" />
       <div class="card">
@@ -17,44 +18,103 @@
         <div class="pokemon-type color">
           <div class="label"><div id="supertypes">Pokemon</div><div id="subtypes">Basic</div></div>
           <div>
-            PS<span class="size" id="pokehealth">130</span>
+            HP<span class="size" id="pokehealth">130</span>
             <img src="img/psychic.png" height="20" alt="psychic" />
           </div>
         </div>
   
         <section class="pokemon-ability">
 
-          <div class="ability"><div class="blankspace">
-          <img src="img/colorless.png" alt="colorless" class="image-size"><img src="img/colorless.png" alt="colorless" class="image-size">Psiquico</div>
-          <span class="rightplus">20+</span></div>
-          <p>Este ataque hace 20 puntos de daño más por cada Energía unida al Pokémon Activo de tu rival.</p>
+          <div class="ability"><div id="pokeatk1" class="blankspace">
+          <img src="img/colorless.png" alt="colorless" class="image-size"><img src="img/colorless.png" alt="colorless" class="image-size">Psychic</div>
+          <span class="rightplus" id="pokedmg">20+</span></div>
+          <p id="pokedesc1">This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon.</p>
           
         </section>
 
         <section class="pokemon-ability">
 
-          <div class="ability"><div class="blankspace">
-          <img src="img/psychic.png" alt="psychic" class="image-size"><img src="img/psychic.png" alt="psychic" class="image-size">Barrera</div>
+          <div class="ability"><div id="pokeatk2" class="blankspace">
+          <img src="img/psychic.png" alt="psychic" class="image-size"><img src="img/psychic.png" alt="psychic" class="image-size" id="pokeattack">Barrier</div>
           <span class="rightplus"></span></div>
-          <p>Durante el próximo turno de tu rival, evita todos los efectos de los ataques, incluido el daño, infligidos a este Pokémon. Si 1 de tus Pokémon usó Barrera durante tu último turno, este ataque no se puede usar.</p>
+          <p id="pokedesc2">During your opponent's next turn, prevent all effects of attacks, including damage, done to this Pokémon. If 1 of your Pokémon used Barrier during your last turn, this attack can't be used.</p>
           
         </section>
   
         <section class="card2">
-          <div class="flexcard">Debilidad <div class="flex1"><img src="img/psychic.png" alt="psychic" class="image-size">X2</div></div>
-          <div>Resistencia</div>
-          <div class="flexcard">Coste de Retirada<div class="flex1"><img src="img/colorless.png" alt="colorless" class="image-size">
+          <div class="flexcard">Weakness<div class="flex1"><img src="img/psychic.png" alt="psychic" class="image-size">X2</div></div>
+          <div>Resistence</div>
+          <div class="flexcard">Retreat Cost<div class="flex1"><img src="img/colorless.png" alt="colorless" class="image-size">
           <img src="img/colorless.png" alt="colorless" class="image-size"></div>
         </section>
         
         <section>
           <div>XY-Evoluciones</div>
-          <div>51/108 Rare</div>
-
-
+          <div>51/108 Rare</div> 
         </section>
-        
 
+      </main>
+      <footer>
+        <footer class="footer">
+          <section class="foot-openner"> 
+              <label class="subscribe">Sign up for Pokémon emails!</label>
+              <section class="fo-row">    
+                  <form class="form">
+                      <input type="email" class="email" placeholder="Email">
+                      <div class="form-envelope">                                                
+                          <select name="country" class="country" id="country" list="countries">
+                              <option value="countries">Select your country</option>
+                          </select>
+                          <input type="date" class="date" id="date">
+                      </div>
+                  </form>
+                  <div class="chekboxes">
+                      <label for="">I'd like to receive emails about:</label>                   
+                      <div class="checklabel">
+                          <input type="checkbox">
+                          <label>Pokémon video games, apps, and more</label>
+                      </div>
+                      <div class="checklabel">
+                          <input type="checkbox">
+                          <label>Pokémon Center (our official online shop)</label>
+                      </div>
+                      <div class="checklabel">
+                          <input type="checkbox">
+                          <label for="">I accept the <a href="https://www.pokemon.com/us/terms-of-use/">terms of use</a> and <a href="https://www.pokemon.com/us/privacy-notice/">Privacy Notice</a></label>
+                      </div>
+                  </div>
+              </section>
+              <input type="submit" value="Sign up" class="signup">
+          </section>        
+          <span class="foot-wrapper">
+              <section class="about">
+                  <h2><img src="https://assets.pokemon.com/static2/_ui/img/footer/pokemon_company.png" alt="The Pokémon Company"></h2>
+                  <a href="https://www.pokemon.com/us/pokemon-news/">News</a>
+                  <a href="https://parents.pokemon.com/en-us/">Parent Guide</a>
+                  <a href="https://www.pokemon.com/us/customer-service/">Customer Service</a>
+                  <a href="https://corporate.pokemon.com/en-us/">About the Pokémon Company</a>
+                  <a href="https://boards.greenhouse.io/pokemoncareers">Carreers</a>
+                  <a href="https://www.pokemon.com/us/country-region/">Select your Country/Region</a>
+                  <a href="https://press.pokemon.com/es">Press Site</a>
+              </section>
+              <section class="social-media">
+                  <div class="sm-icons">
+                      
+                  </div>
+              </section>
+              <section class="copyright">Security</a>
+                  <label class="disclaimer">
+                      ©2024 Pokémon. ©1995 - 2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
+                  </label> 
+              </label>
+              </section>
+          </span>
+          <a>Return to Stats</a>
+
+  
+      </footer>
+
+        
 
         <section class="second-info"></section>
       </div>

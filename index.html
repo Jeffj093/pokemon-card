@@ -16,7 +16,7 @@
 
   
         <div class="pokemon-type color">
-          <div class="label"><div id="supertypes">Pokemon</div><div id="subtypes">Basic</div></div>
+          <div class="label"><div class="boldOne" id="subtypes">Basic</div><div id="supertypes" class="boldOne">Pokemon</div></div>
           <div>
             HP<span class="size" id="pokehealth">130</span>
             <img src="img/psychic.png" height="20" alt="psychic" />
@@ -25,9 +25,22 @@
   
         <section class="pokemon-ability">
 
-          <div class="ability"><div id="pokeatk1" class="blankspace">
-          <img src="img/colorless.png" alt="colorless" class="image-size"><img src="img/colorless.png" alt="colorless" class="image-size">Psychic</div>
-          <span class="rightplus" id="pokedmg">20+</span></div>
+        <div class="ability">
+
+          <div class="color1">
+           <div class="pepas">
+            <img src="img/colorless.png" alt="colorless" class="image-size">
+            <img src="img/colorless.png" alt="colorless" class="image-size">
+           </div>
+          <div id="pokeatk1" class="blankspace color2">
+            Psychic
+            </div>
+          </div>
+
+
+    
+          <p id="pkdmg" class="rightplus color3">20+</p>
+        </div>
           <p id="pokedesc1">This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon.</p>
           
         </section>
@@ -54,7 +67,7 @@
         </section>
 
       </main>
-      <footer>
+      <!-- <footer>
         <footer class="footer">
           <section class="foot-openner"> 
               <label class="subscribe">Sign up for Pokémon emails!</label>
@@ -112,14 +125,22 @@
           <a>Return to Stats</a>
 
   
-      </footer>
+      </footer> -->
 
         
 
         <section class="second-info"></section>
       </div>
     </div>
-  <button id="getpokemon">Get</button>
-  <script src="index.js"></script>
+
+
+ <div class="buttomJeff">
+  <div  id="getpokemon">Get Pokemon AP</div>
+ </div>
+
+
+
+
+  <script src="app.js"></script>
   </body>
 </html>

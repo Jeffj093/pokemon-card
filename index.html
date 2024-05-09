@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
     <title>MiniPokdex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <header>
+      <div class="navbar">
+       <div class="logo"><a href="">Pokemon TCG Guru</a></div>
+       <img class="logoimg" src="img/logo.png" alt="logo">
+        <ul class="links">
+          <li><a href="advanced">Advanced</a></li>
+          <li><a href="syntax">Syntax</a></li>
+          <li><a href="sets">Services</a></li>
+          <li><a href="donate">Donate</a></li>
+          </ul>
+          <a href="#" class="action_btn"></a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown_menu">
+           <li><a href="advanced">Advanced</a></li>
+            <li><a href="syntax">Syntax</a></li>
+            <li><a href="sets">Services</a></li>
+            <li><a href="donate">Donate</a></li>
+          </div>
+
+    </header>
     <main>
     <div class="center">
       <img class="img-mewtwo" src="img/card.png" alt="mewtwo" id="pokeimg" />
@@ -28,7 +56,7 @@
         <div class="ability">
 
           <div class="color1">
-           <div class="pepas">
+           <div id="pepas">
             <img src="img/colorless.png" alt="colorless" class="image-size">
             <img src="img/colorless.png" alt="colorless" class="image-size">
            </div>
@@ -55,7 +83,7 @@
         </section>
   
         <section class="card2">
-          <div class="flexcard">Weakness<div class="flex1"><img src="img/psychic.png" alt="psychic" class="image-size">X2</div></div>
+          <div id="energyatk" class="flexcard">Weakness<div class="flex1"><img src="img/psychic.png" alt="psychic" class="image-size">X2</div></div>
           <div>Resistence</div>
           <div class="flexcard">Retreat Cost<div class="flex1"><img src="img/colorless.png" alt="colorless" class="image-size">
           <img src="img/colorless.png" alt="colorless" class="image-size"></div>
@@ -137,8 +165,6 @@
  <div class="buttomJeff">
   <div  id="getpokemon">Get Pokemon AP</div>
  </div>
-
-
 
 
   <script src="app.js"></script>

@@ -147,18 +147,39 @@ justify-content: space-between;
 .flexcard {
   display: flex;
   flex-direction: column;
+  align-items: center
   ;
+}
+.flex1 img{
+  padding: 10px 10px 0px 0px;
 }
 
 .flex1 {
   display: flex;
-  padding-left: 95px;
 }
 
 .evoltype{
   display: flex;
-  padding-top: 35px;
+  justify-content: space-between;
+}
 
+.evoltype2{
+  padding-top: 15px;
+  white-space: nowrap;
+  padding-left: 25px;
+  font-size: 20px;
+
+}
+
+.xpanlogo{
+  padding-top: 25px;
+}
+
+.evoltype3{
+  padding-top: 7px;
+  white-space: nowrap;
+  padding-left: 25px;
+ font-size: 15px;
 }
 
 .stats {
@@ -241,17 +262,22 @@ li {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #c9d1d9;
   font-size: 1rem;
-<<<<<<< HEAD
-=======
+
+}
+.tlheader a:hover{
+  color: #286fda;
+  
 }
 
-a:hover{
-  background-color: rgba(197, 29, 57, 0.849);
+.links a:hover{
+  background-color: #0d1117;
   
+}
 
->>>>>>> f0993b231bd483114ce5e1eecdc1a1f7443999d0
+.links{
+  padding-right: 105px;
 }
 
 header{
@@ -260,22 +286,21 @@ header{
 }
 
 .navbar {
+  display: flex;
   width: 100%;
   height: 60px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: #161b22;
 }
 
 .logoimg{
-  height: 50px;;
+  height: 50px;
+  margin-left: 10px;
   
 }
 
 .logo{
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: bold;
 
 
@@ -283,10 +308,11 @@ header{
 .tlheader{
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  padding-left: 15px;
   
-
 }
+
+
 .tlheader a{
 padding-left: 10px;
 
@@ -294,8 +320,16 @@ padding-left: 10px;
 
 .navbar .links{
   display: flex;
-  gap: 2rem;
-  margin-left: 600px;
+  align-self: center;
+  padding-top: 5px;
+
+}
+
+.navbar li{
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 
 }
 
@@ -304,10 +338,10 @@ padding-left: 10px;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
-  
+  align-self: center;
+
+  margin-right: 20px;
 }
-
-
 
 .dropdown_menu{
   display: none;
@@ -392,6 +426,9 @@ input[type="search"] {
 }
 
 .whiteicon{
-  color: #ffffff;
+  color: #c9d1d9;
 }
 
+ul{
+  padding-left: 10px;
+}

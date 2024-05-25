@@ -243,6 +243,15 @@ a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
+<<<<<<< HEAD
+=======
+}
+
+a:hover{
+  background-color: rgba(197, 29, 57, 0.849);
+  
+
+>>>>>>> f0993b231bd483114ce5e1eecdc1a1f7443999d0
 }
 
 header{

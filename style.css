@@ -132,9 +132,10 @@ justify-content: space-between;
 }
 
 .card2 {
+  color: black;
   display: flex;
   justify-content: space-between;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 4px;
   border-radius: 0.25rem;
   text-align: center;
@@ -290,6 +291,7 @@ header{
   height: 60px;
   justify-content: space-between;
   background-color: #ffffff;
+
 }
 
 .logoimg{
@@ -433,10 +435,10 @@ ul{
 
 .dark{
   background-color: #1a202c;
-  color: rgb(255, 255, 255);
- 
+  color: white;
+
 }
 
 header .dark{
-  background-color: #161b22;
+  background-color: #243855;
 }

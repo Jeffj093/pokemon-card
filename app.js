@@ -99,8 +99,8 @@ const JeffToggle = () => {
   }
 };
 
-
-const toggle = addEventListener('click',()=> {
+const toggle = document.getElementById('toggle')
+toggle.addEventListener('click',()=> {
   
   JeffToggle()
   

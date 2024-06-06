@@ -100,11 +100,28 @@ const JeffToggle = () => {
 };
 
 const toggle = document.getElementById('toggle')
+const toggle2 = document.getElementById('toggle2')
+const dropBgr = document.getElementsByClassName('.dropdown_menu')
 toggle.addEventListener('click',()=> {
+  
   
   JeffToggle()
   
 })
+toggle2.addEventListener('click',()=> {
+  
+  
+  JeffToggle()
+  
+})
+
+dropBgr.addEventListener('click',()=> {
+  
+  
+  JeffToggle()
+  
+})
+
 
 
 

@@ -12,6 +12,22 @@ const powerAtk2 = document.getElementById("pokeatk2");
 const powerDesc2 = document.getElementById("pokedesc2");
 const powerMarbles = document.getElementById("pepas");
 
+
+const toggleStage = () =>{
+  const currentIcon = localStorage.getItem('icon');
+  if (currentIcon === 'sun' || currentIcon === null) {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.add("dark");
+    document.body.classList.add('dark');
+  } else if (currentIcon === 'moon') {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.remove("dark");
+    document.body.classList.remove('dark');
+  }
+
+  }
+  toggleStage()
+
 function getApiData() {
   fetch("https://api.pokemontcg.io/v2/cards/base3-33")
     .then((response) => response.json())
@@ -46,11 +62,49 @@ function getApiData() {
 button.addEventListener("click", getApiData);
 
 const toggleBtn = document.querySelector(".toggle_btn");
-const toggleBtnIcon = document.querySelector(".toggle_btn i"); // Assuming correct selector
+const toggleBtnIcon = document.querySelector(".toggle_btn i");
 const dropDownMenu = document.querySelector(".dropdown_menu");
 
-toggleBtn.onclick = function() {
+toggleBtn.onclick = function () {
   dropDownMenu.classList.toggle("open");
   const isOpen = dropDownMenu.classList.contains("open");
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
+
+const JeffToggle = () => {
+  let currentIcon = localStorage.getItem("icon");
+  const label_toggle = document.getElementById("label_toggle");
+
+  // console.log(currentIcon)
+
+  if (currentIcon === null) {
+    label_toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    localStorage.setItem("icon", "sun");
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.add("dark");
+    document.body.classList.add("dark");
+  } else if (currentIcon === "sun") {
+    label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    localStorage.setItem("icon", "moon");
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.remove("dark");
+    document.body.classList.remove("dark");
+  } else if (currentIcon === "moon") {
+    label_toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    localStorage.setItem("icon", "sun");
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.add("dark");
+    document.body.classList.add("dark");
+
+  }
+};
+
+
+const toggle = addEventListener('click',()=> {
+  
+  JeffToggle()
+  
+})
+
+
+

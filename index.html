@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-     crossorigin="anonymous" 
-     referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>MiniPokdex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -17,106 +18,129 @@
     <header>
       <div class="navbar">
         <div class="tlheader">
-          <img class="logoimg" src="img/logo.png" alt="logo">
-        <a class="logo" href="">Pokémon TCG Guru</a>
-      </div>
-  
-      <div>
-        <ul class="links">
-          <li><a href="#">Advanced</a></li>
-          <li><a href="#">Syntax</a></li>
-          <li><a href="#">Sets</a></li>
-          <li><a href="#">Donate</a></li>
-       
-        <div id="toggle2">
-          <div id="label_toggle">
-            <li><i class="fa-solid fa-moon"></i></li>
-            </div>
-        </div>
-      
+          <img class="logoimg" src="img/logo.png" alt="logo" />
+          <a class="logo" href="">Pokémon TCG Guru</a>
         </div>
 
-        </ul>
+        <nav class="">
+          <ul class="links">
+            <li><a href="#">Advanced</a></li>
+            <li><a href="#">Syntax</a></li>
+            <li><a href="#">Sets</a></li>
+            <li><a href="#">Donate</a></li>
+            <li>
+              <div id="toggle2">
+                <div id="label_toggle">
+                  <li><i class="fa-solid fa-moon"></i></li>
+                </div>
+              </div>
+            </li>
+          </ul>
+  
+
           <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="dropdown_menu"> 
-          <div class="searchbar">
-          <input placeholder="Search for a card" type="search">
-          <i class="fa-solid fa-magnifying-glass  position  whiteicon"></i>
-          </div>
-            <li><a href="advanced">Advanced</a></li>
-            <li><a href="syntax">Syntax</a></li>
-            <li><a href="sets">Sets</a></li>
-            <li><a href="donate">Donate</a></li>
-              <li id="toggle"><i class="fa-solid fa-sun whiteicon"></i></li>
+        </nav>
       </div>
     </header>
+    <div class="dropdown_menu">
+      <div class="searchbar">
+        <input placeholder="Search for a card" type="search" />
+        <i class="fa-solid fa-magnifying-glass position whiteicon"></i>
+      </div>
+      <ul>
+        <li><a href="advanced">Advanced</a></li>
+        <li><a href="syntax">Syntax</a></li>
+        <li><a href="sets">Sets</a></li>
+        <li><a href="donate">Donate</a></li>
+        <li id="toggle"><i class="fa-solid fa-sun whiteicon"></i></li>
+      </ul>
+    </div>
     <main>
-    <div class="center">
-    <img class="img-mewtwo" src="img/card.png" alt="mewtwo" id="pokeimg" />
-      <div class="card">
-        <div class="pokemon-name title" id="pokename">Mewtwo</div>
-
-  
-        <div class="pokemon-type color">
-          <div class="label"><div class="boldOne" id="subtypes">Basic</div><div id="supertypes" class="boldOne">Pokemon</div></div>
-          <div>
-            HP<span class="size" id="pokehealth">130</span>
-            <img src="img/psychic.png" height="20" alt="psychic" id="powrtype" />
-          </div>
+      <div class="center"></div>
+      <img class="img-mewtwo" src="img/card.png" alt="mewtwo" id="pokeimg" />
+      <div class="card"></div>
+      <div class="pokemon-name title" id="pokename">Mewtwo</div>
+      <div class="pokemon-type color">
+        <div class="label">
+          <div class="boldOne" id="subtypes">Basic</div>
+          <div id="supertypes" class="boldOne">Pokemon</div>
         </div>
-  
-        <section class="pokemon-ability">
-
+        <div>
+          HP<span class="size" id="pokehealth">130</span>
+          <img
+            src="img/psychic.png"
+            height="20"
+            alt="psychic"
+            id="powrtype"
+            class="pwrtimg"
+          />
+        </div>
+      </div>
+      <section class="pokemon-ability">
         <div class="ability">
           <div class="color1">
             <div id="pepas">
-            <img src="img/colorless.png" alt="colorless" class="image-size">
-            <img src="img/colorless.png" alt="colorless" class="image-size">
-      </div>
-          <div id="pokeatk1" class="blankspace color2">
-            Psychic
+              <img src="img/colorless.png" alt="colorless" class="image-size" />
+              <img src="img/colorless.png" alt="colorless" class="image-size" />
             </div>
+            <div id="pokeatk1" class="atk1 blankspace color2">Psychic</div>
           </div>
-
-
-    
           <p id="pkdmg" class="rightplus color3">20+</p>
         </div>
-          <p id="pokedesc1">This attack does 20 more damage for each Energy attached to your opponent's Active Pokémon.</p>
-          
-        </section>
-
-        <section class="pokemon-ability">
-
-          <div class="ability"><div id="pokeatk2" class="blankspace">
-          <img src="img/psychic.png" alt="psychic" class="image-size"><img src="img/psychic.png" alt="psychic" class="image-size" id="pokeattack">Barrier</div>
-          <span class="rightplus"></span></div>
-          <p id="pokedesc2">During your opponent's next turn, prevent all effects of attacks, including damage, done to this Pokémon. If 1 of your Pokémon used Barrier during your last turn, this attack can't be used.</p>
-          
-        </section>
-  
-        <section class="card2">
-          <div id="energyatk" class="flexcard">Weakness
-            <div class="flex1"><img src="img/psychic.png" alt="psychic" class="image-size">X2</div>
+        <p id="pokedesc1">
+          This attack does 20 more damage for each Energy attached to your
+          opponent's Active Pokémon.
+        </p>
+      </section>
+      <section class="pokemon-ability">
+        <div class="ability">
+          <div id="pokeatk2" class="atk2 blankspace">
+            <img src="img/psychic.png" alt="psychic" class="image-size" />
+            <img
+              src="img/psychic.png"
+              alt="psychic"
+              class="image-size"
+              id="pokeattack"
+            />Barrier
           </div>
-          <div>Resistence</div>
-          <div class="flexcard">Retreat Cost<div class="flex1"><img src="img/colorless.png" alt="colorless" class="image-size">
-          <img src="img/colorless.png" alt="colorless" class="image-size"></div>
-        </section>
-        
-
-        <section class="evoltype card2">
-          <div> 
-            <div class="evoltype2">XY-Evolutions</div>
-           <div class="evoltype3">51/108 Rare</div> 
+          <span class="rightplus"></span>
         </div>
-          <div><img src="img/expansion.png" alt="xpansion" class="xpanlogo"></div>
-        </section>
+        <p id="pokedesc2">
+          During your opponent's next turn, prevent all effects of attacks,
+          including damage, done to this Pokémon. If 1 of your Pokémon used
+          Barrier during your last turn, this attack can't be used.
+        </p>
+      </section>
 
-      </main>
-      <!-- <footer>
+      <section class="card2">
+        <div id="energyatk" class="flexcard">
+          Weakness
+          <div class="flex1">
+            <img src="img/psychic.png" alt="psychic" class="image-size" />x2
+          </div>
+        </div>
+        <div class="stats2">Resistence</div>
+        <div class="flexcard">Retreat Cost</div>
+        <div class="flex1">
+          <img src="img/colorless.png" alt="colorless" class="image-size" />
+          <img src="img/colorless.png" alt="colorless" class="image-size" />
+        </div>
+      </section>
+      <section class="evoltype card3">
+        <div>
+          <a href="https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/?xy12=">
+            <div class="evoltype2">XY-Evolutions</div>
+          </a>
+          <div class="evoltype3">51/108 Rare</div>
+        </div>
+        <div>
+          <img src="img/expansion.png" alt="xpansion" class="xpanlogo" />
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
         <footer class="footer">
           <section class=""> 
               <label class="">Sign up for Pokémon emails!</label>
@@ -176,18 +200,14 @@
   
       </footer> -->
 
-        
-
-        <section class="second-info"></section>
+    <!-- <section class="second-info"></section>
       </div>
+    </div> -->
+
+    <div class="buttomJeff">
+      <div id="getpokemon">Get Pokemon AP</div>
     </div>
 
-
- <div class="buttomJeff">
-  <div  id="getpokemon">Get Pokemon AP</div>
- </div>
-
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

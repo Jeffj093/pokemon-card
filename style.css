@@ -566,19 +566,20 @@ header .dark {
 }
 
 .footer-part1 {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .footer-part2 {
-  background-color: red;
+  margin-bottom: 15px;
+  /* background-color: red; */
 }
 
 .footer-part3 {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .footer-green {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-direction: column;
 }
@@ -653,4 +654,19 @@ footer {
   height: 20px;
   cursor: pointer;
   margin-right: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  background-color: #808080; 
+  border: 1px solid #808080; 
+  border-radius: 3.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: white;
+  font-weight: 5000;
+  font-size: 20px;
+
 }
